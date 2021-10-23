@@ -6,28 +6,16 @@ const slice = createSlice({
   name: "projects",
   initialState: [],
   reducers: {
-    // action : action handlers
+    // action => action handler
     projectAdded: (projects, action) => {
       projects.push({
         id: ++lastId,
-        name: action.payload.name,
-        isCompleted: false,
+        name: action.payload.name
       });
-    },
-    projectCompleted: (projects, action) => {
-      const index = projects.findIndex(
-        (project) => project.id === action.payload.id
-      );
-      projects[index].isCompleted = true;
-    },
-    projectRemoved: (projects, action) => {
-      const index = projects.findIndex(
-        (project) => project.id === action.payload.id
-      );
-      projects.remove(index);
-    },
-  },
+    }
+  }
 });
 
-export const { projectAdded, projectRemoved, projectCompleted } = slice.actions;
+export const { projectAdded } = slice.actions;
+
 export default slice.reducer;

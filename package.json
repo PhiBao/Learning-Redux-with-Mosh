@@ -1,35 +1,39 @@
 {
-  "name": "redux-starter",
-  "version": "1.0.0",
-  "description": "Redux Starter Project",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js",
-    "test": "yarn jest --watch"
-  },
-  "keywords": [],
-  "author": "Mosh Hamedani",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@types/jest": "^27.0.2",
-    "babel-jest": "^27.2.5",
-    "jest": "^27.2.5",
-    "webpack": "4.41.6",
-    "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.10.3"
-  },
+  "name": "bugs-frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@reduxjs/toolkit": "^1.2.5",
-    "axios": "^0.22.0",
-    "immer": "^9.0.6",
-    "immutable": "^4.0.0-rc.15",
-    "lodash": "^4.17.21",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "moment": "^2.29.1",
-    "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0",
-    "reselect": "^4.0.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.5",
+    "react-scripts": "3.4.1",
+    "redux": "^4.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

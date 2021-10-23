@@ -4,16 +4,14 @@ import logger from "./middleware/logger";
 import toast from "./middleware/toast";
 import api from "./middleware/api";
 
-export default function () {
+export default function() {
   return configureStore({
     reducer,
     middleware: [
       ...getDefaultMiddleware(),
-      logger({
-        message: "I Love U",
-      }),
+      // logger({ destination: "console" }),
       toast,
-      api,
-    ],
+      api
+    ]
   });
 }
